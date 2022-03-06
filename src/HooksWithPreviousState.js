@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 function HooksWithPreviousState() {
     const[counter, setCounter] = useState(0)
     function incrementIncorrectWay() {
-        
         for(var i=0;i<3;i++) {
             //Incorrect Way as state will be stale
             //setCounter(counter+1)
