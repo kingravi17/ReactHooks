@@ -13,6 +13,7 @@ import Login from './Login';
 import { ThemeContext } from './Context/ThemeContext';
 import UseReducerHookSimple from './UseReducerHookSimple';
 import UseReducerHookReduxStyle from './UseReducerHookReduxStyle';
+import MultipleUseReducer from './MultipleUseeducer';
 
 function App() {
   const [isLoggedIn, updateLogin] = useState(false)
@@ -49,7 +50,10 @@ function App() {
       
       {/* Uncomment for useReducer Hook
       <UseReducerHookSimple/>
-      <UseReducerHookReduxStyle/> */}
+      <UseReducerHookReduxStyle/> 
+      
+      */}
+      <MultipleUseReducer/>
     </div>
   );
 }
