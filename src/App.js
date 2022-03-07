@@ -11,9 +11,11 @@ import { LoginContext } from './Context/LoginContext';
 import Home from './Home';
 import Login from './Login';
 import { ThemeContext } from './Context/ThemeContext';
+import UseReducerHookSimple from './UseReducerHookSimple';
+import UseReducerHookReduxStyle from './UseReducerHookReduxStyle';
 
 function App() {
-  const [isLoggedIn, updateLogin] = useState(true)
+  const [isLoggedIn, updateLogin] = useState(false)
   const [userName , setUserName] = useState("")
   const [bgColor, updateBgColor] = useState()
   return (
@@ -31,6 +33,8 @@ function App() {
       <UseEffectMouseEventListner/>
       <ContainerForUnmounting/>
       */}
+
+      {/* Uncomment this for UseContext example
       <ThemeContext.Provider value={{bgColor}}>
         <LoginContext.Provider value={{userName, setUserName, isLoggedIn, updateLogin}}>
             <span>
@@ -41,8 +45,11 @@ function App() {
             { isLoggedIn ? <Home/> : <Login/> }
         </LoginContext.Provider>
       </ThemeContext.Provider>
-
-
+      */}
+      
+      {/* Uncomment for useReducer Hook
+      <UseReducerHookSimple/>
+      <UseReducerHookReduxStyle/> */}
     </div>
   );
 }

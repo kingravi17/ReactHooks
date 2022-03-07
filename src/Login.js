@@ -3,13 +3,13 @@ import { LoginContext } from './Context/LoginContext'
 import { ThemeContext } from './Context/ThemeContext'
 
 function Login() {
-   const {updateLogin, setUserName} = useContext(LoginContext)
+   const {updateLogin, setUserName, isLoggedIn} = useContext(LoginContext)
    const {bgColor} = useContext(ThemeContext)
   return (
     <div className="bg-div" style={{ backgroundColor: `${bgColor}` }} >
         <span>
             <h1>
-                Username : 
+                Username :
             </h1>
             <input onChange={(e) => setUserName(e.target.value)} type="text" />
         </span>
