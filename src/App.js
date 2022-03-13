@@ -19,6 +19,8 @@ import DataFetchingAndUpdateWithReducer from './DataFetchingAndUpdateWithReducer
 import UseRefHook from './UseRefHook';
 import CallBackParent from './callBackHook/CallBackParent';
 import UseMemo from './UseMemo';
+import AddCustomHooks from './customHooks/AddCustomHooks';
+import InputCustomHookExample from './customHooks/InputCustomHookExample';
 
 function App() {
   const [isLoggedIn, updateLogin] = useState(false)
@@ -70,7 +72,8 @@ function App() {
     {/* Uncomment for use callback and usememo hook
     <UseMemo/>
     <CallBackParent/>  */}
-    
+    <AddCustomHooks/>
+    <InputCustomHookExample/>
       
       
     </div>
