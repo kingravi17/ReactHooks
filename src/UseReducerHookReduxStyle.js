@@ -21,7 +21,7 @@ function UseReducerHookReduxStyle() {
   return (
     <>
         <h1> Counter 1 is {state.counter1} </h1>
-        <h1> Counter 1 is {state.counter2} </h1>
+        <h1> Counter 2 is {state.counter2} </h1>
         <button onClick={() => dispatch({type:'increment1',value:1})}>Increment Counter1 by 1</button>
         <button onClick={() => dispatch({type:'increment1',value:5})}>Increment Counter1 by 5</button>
         <button onClick={() => dispatch({type:'decrement1',value:1})}>Decrement Counter1 by 1</button>
